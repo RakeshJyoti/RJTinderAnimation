@@ -2,8 +2,8 @@
 //  CategoryFiles.swift
 //  DemoMenu
 //
-//  Created by Techpro Studio on 9/21/17.
-//  Copyright © 2017 Techpro Studio. All rights reserved.
+//  Created by Rakesh Jyoti on 12/8/17.
+//  Copyright © 2017 RJ. All rights reserved.
 //
 import Foundation
 import UIKit
