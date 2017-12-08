@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,7 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,7 +16,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCardsVC" customModule="HellowLit_v2" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCardsVC" customModule="RJTinderAnimation" customModuleProvider="target">
             <connections>
                 <outlet property="cardManager" destination="rGp-O9-NUc" id="25q-PN-V43"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -49,7 +48,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttw-pR-PcW">
                     <rect key="frame" x="0.0" y="435" width="320" height="47"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curve_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bvt-jS-23k">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bvt-jS-23k">
                             <rect key="frame" x="0.0" y="8" width="320" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="31" id="1Fn-iV-2in"/>
@@ -58,7 +57,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TL-Oj-zSb">
                             <rect key="frame" x="33.5" y="-7.5" width="60" height="56.5"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel.png" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-BS-Blp">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-BS-Blp">
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="56.5"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadow" value="YES"/>
@@ -80,7 +79,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kT1-r1-1XR">
                             <rect key="frame" x="130" y="1.5" width="60" height="56.5"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connect.png" translatesAutoresizingMaskIntoConstraints="NO" id="BmW-O2-YJY">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BmW-O2-YJY">
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="56.5"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -102,7 +101,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZ0-zH-Fll">
                             <rect key="frame" x="226" y="-7.5" width="60" height="56.5"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hGb-hs-aud">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hGb-hs-aud">
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="56.5"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadow" value="YES"/>
@@ -137,7 +136,7 @@
                         <constraint firstItem="Bvt-jS-23k" firstAttribute="leading" secondItem="ttw-pR-PcW" secondAttribute="leading" id="xPb-hC-TW2"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGp-O9-NUc" customClass="CardStackManagere" customModule="HellowLit_v2" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGp-O9-NUc" customClass="CardStackManagere" customModule="RJTinderAnimation" customModuleProvider="target">
                     <rect key="frame" x="27.5" y="79" width="265" height="344"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="rGp-O9-NUc" secondAttribute="height" multiplier="287:373" id="dMa-uE-oTc"/>
@@ -147,29 +146,22 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="rGp-O9-NUc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Se-mq-JsM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eTF-Uz-3je" secondAttribute="trailing" constant="16" id="7NO-Oi-eQy"/>
-                <constraint firstItem="ttw-pR-PcW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Bao-sk-rrA"/>
+                <constraint firstAttribute="trailing" secondItem="eTF-Uz-3je" secondAttribute="trailing" constant="16" id="7NO-Oi-eQy"/>
+                <constraint firstItem="ttw-pR-PcW" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Bao-sk-rrA"/>
                 <constraint firstItem="rGp-O9-NUc" firstAttribute="top" secondItem="dmy-4Q-CdC" secondAttribute="bottom" constant="14" id="LpS-oi-tFm"/>
                 <constraint firstItem="ttw-pR-PcW" firstAttribute="top" secondItem="rGp-O9-NUc" secondAttribute="bottom" constant="12" id="LzJ-Vu-1do"/>
-                <constraint firstItem="ttw-pR-PcW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OGs-MX-ahw"/>
-                <constraint firstItem="dmy-4Q-CdC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c7o-IJ-2G3"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eTF-Uz-3je" secondAttribute="bottom" constant="55" id="eUQ-JM-XjX"/>
-                <constraint firstItem="eTF-Uz-3je" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="enP-Pu-D4A"/>
+                <constraint firstItem="ttw-pR-PcW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OGs-MX-ahw"/>
+                <constraint firstItem="dmy-4Q-CdC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c7o-IJ-2G3"/>
+                <constraint firstAttribute="bottom" secondItem="eTF-Uz-3je" secondAttribute="bottom" constant="55" id="eUQ-JM-XjX"/>
+                <constraint firstItem="eTF-Uz-3je" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="enP-Pu-D4A"/>
                 <constraint firstItem="dmy-4Q-CdC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lju-BU-ZUt"/>
                 <constraint firstItem="rGp-O9-NUc" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="404:667" id="m9R-Lj-TJC"/>
                 <constraint firstItem="eTF-Uz-3je" firstAttribute="top" secondItem="ttw-pR-PcW" secondAttribute="bottom" constant="12" id="mq2-JF-gHq"/>
-                <constraint firstItem="dmy-4Q-CdC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ts1-Aw-3Zi"/>
+                <constraint firstItem="dmy-4Q-CdC" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="ts1-Aw-3Zi"/>
                 <constraint firstItem="kT1-r1-1XR" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="66:667" id="x3Q-ro-Nu7"/>
             </constraints>
             <nil key="simulatedBottomBarMetrics"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="cancel.png" width="208" height="208"/>
-        <image name="connect.png" width="208" height="208"/>
-        <image name="curve_line.png" width="1440" height="107"/>
-        <image name="undo.png" width="208" height="208"/>
-    </resources>
 </document>
