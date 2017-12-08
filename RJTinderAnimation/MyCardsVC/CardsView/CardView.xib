@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.ttf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView" customModule="RJTinderAnimation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="273"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmn-v5-zeV">
+                    <rect key="frame" x="0.0" y="0.0" width="230" height="273"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2017-12-06 at 4.26.19 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-Vm-y8h">
+                            <rect key="frame" x="0.0" y="0.0" width="230" height="215.5"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y72-Xg-YvG">
+                            <rect key="frame" x="0.0" y="215.5" width="230" height="57.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RJ Tinder Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNX-O6-7Hq">
+                                    <rect key="frame" x="8" y="10" width="214" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="Dv8-3l-rNJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="19"/>
+                                    </variation>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.75 mi away | Design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVY-84-3FE">
+                                    <rect key="frame" x="8" y="37" width="214" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="fM3-RV-TD1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="11"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="fVY-84-3FE" firstAttribute="top" secondItem="MNX-O6-7Hq" secondAttribute="bottom" constant="5" id="BZB-En-IRI"/>
+                                <constraint firstItem="MNX-O6-7Hq" firstAttribute="leading" secondItem="y72-Xg-YvG" secondAttribute="leading" constant="8" id="L6h-Mf-nYZ"/>
+                                <constraint firstItem="fVY-84-3FE" firstAttribute="leading" secondItem="y72-Xg-YvG" secondAttribute="leading" constant="8" id="Wr7-vJ-jip"/>
+                                <constraint firstAttribute="trailing" secondItem="MNX-O6-7Hq" secondAttribute="trailing" constant="8" id="ZpZ-sw-ReE"/>
+                                <constraint firstAttribute="trailing" secondItem="fVY-84-3FE" secondAttribute="trailing" constant="8" id="dcn-pg-aM8"/>
+                                <constraint firstItem="MNX-O6-7Hq" firstAttribute="top" secondItem="y72-Xg-YvG" secondAttribute="top" constant="10" id="tog-WZ-kYG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TNo-Vm-y8h" firstAttribute="top" secondItem="vmn-v5-zeV" secondAttribute="top" id="7Kn-Q7-05V"/>
+                        <constraint firstItem="TNo-Vm-y8h" firstAttribute="leading" secondItem="vmn-v5-zeV" secondAttribute="leading" id="FB3-G5-nf7"/>
+                        <constraint firstAttribute="bottom" secondItem="y72-Xg-YvG" secondAttribute="bottom" id="HtN-qd-4i0"/>
+                        <constraint firstAttribute="trailing" secondItem="TNo-Vm-y8h" secondAttribute="trailing" id="NJJ-7u-Msv"/>
+                        <constraint firstItem="TNo-Vm-y8h" firstAttribute="height" secondItem="vmn-v5-zeV" secondAttribute="height" multiplier="0.79" id="WiB-kB-Fpi"/>
+                        <constraint firstItem="y72-Xg-YvG" firstAttribute="leading" secondItem="vmn-v5-zeV" secondAttribute="leading" id="lCJ-eB-Ucp"/>
+                        <constraint firstAttribute="trailing" secondItem="y72-Xg-YvG" secondAttribute="trailing" id="mK3-tB-c5j"/>
+                        <constraint firstItem="y72-Xg-YvG" firstAttribute="top" secondItem="TNo-Vm-y8h" secondAttribute="bottom" id="q2H-QL-XqQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornorRadious">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vmn-v5-zeV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8Q0-cq-IRO"/>
+                <constraint firstItem="vmn-v5-zeV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="OsI-4R-bgH"/>
+                <constraint firstItem="vmn-v5-zeV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ay5-vR-xM5"/>
+                <constraint firstItem="vmn-v5-zeV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pQB-qH-ddo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="dropShadow" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-47" y="-145.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Screen Shot 2017-12-06 at 4.26.19 PM.png" width="188" height="227"/>
+    </resources>
+</document>
